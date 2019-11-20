@@ -1,13 +1,33 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    max-width: 650px;
     border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
+
+
+}   
+
+.App {
+    height: 650px;
 }
+
+
+.logo-container {
+    width: 50px;
+    height: 30px;
+    padding-top: 30px;
+    margin-left: 75px;
+}
+
+img {
+    width: 150px;
+}
+
 .display {
     margin-top: 25px;
+    margin-left: 75px;
+    margin-bottom: 20px;
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -18,5 +38,78 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
-  }
+    font-size: 5.4rem;
+}
+
+.grid {
+    margin-left: 70px;
+    max-width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: [col1] 100px [col2] 100px [col3] 100px [col4] 100px [col5]100px;
+    grid-template-rows: [row1] 100px [row2] 100px [row3] 100px [row4] 100px [row5] 150px;
+}
+
+
+
+.numbers_Container {
+    width: 400px;
+    grid-area: row2 / col1 / row2 / col1;
+}
+
+.numbers_Btn {
+    font-size: 34px;
+    background: #102B64;
+    margin-left: 20px;
+    margin-top: 40px;
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: -2px 4px 4px rgba(7, 7, 7, .7);
+    border: 2px solid #102B64;
+
+}
+
+.operator_Container {
+    width: 100px;
+    grid-area: row1 / col5 / row5 / col5;
+}
+
+.operator_Btn{
+    font-size: 34px;
+    background: #34A6DE;
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    box-shadow: -2px 4px 4px rgba(7, 7, 7, .7);
+    border: 2px solid #34A6DE;
+}
+
+.special_Container {
+    width: 400px;
+    grid-area: row1 / col1 / row1 / col4;
+}
+
+.special_Btn {
+    font-size: 34px;
+    background: #1A4BA0;
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: -2px 4px 4px rgba(7, 7, 7, .7);
+    border: 2px solid #1A4BA0;
+}
+
+.numbers_Btn:nth-child(10) {
+    width: 220px;
+    border-radius: 50px;
+}
+
+
