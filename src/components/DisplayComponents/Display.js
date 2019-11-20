@@ -1,8 +1,9 @@
 import React from "react";
 
 
-const Display = () => {
-  return <div className="display">0</div>;
+const Display = props => {
+  
+  return <div className="display">{props.data}</div>;
   
 };
 

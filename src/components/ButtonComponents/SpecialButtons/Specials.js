@@ -11,8 +11,8 @@ const Specials = props => {
   const [ special ] = useState(specials);
   return (
     <div className ="special_Container">
-       {special.map((button, index) => (
-             <SpecialButton key={index} button={button} />
+       {special.map((numbers, index) => (
+             <SpecialButton key={index} button={numbers} data={props.newData} />
         ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 
@@ -21,17 +21,19 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
+  const [data, setData] = useState(0);
   
-  
+  const newData = (e) => {setData (e)};
+
   return (
     <div className="container">
       <Logo />
-      {<Display />}
+      <Display data={data}/>
       <div className="App">
       <div className="grid">
-        {<Specials />}
-        {<Numbers />}
-        {<Operators />}
+        <Specials newData={newData}/>
+        <Numbers newData={newData}/>
+        <Operators newData={newData}/>
 
       </div>
       </div>

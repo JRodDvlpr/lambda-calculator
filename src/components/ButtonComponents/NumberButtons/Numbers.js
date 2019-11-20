@@ -8,15 +8,15 @@ import NumberButton from './NumberButton';
 
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
-  const [ numberState ] = useState(numbers)
+  const [ numberState, setNumberState ] = useState(numbers)
   console.log(numbers);
   return (
     <div className="numbers_Container">
-      {numberState.map((numbers, index) => {
-        return <NumberButton key={index} button={numbers} />;
-      })}
+      {numberState.map((numbers, index) => (
+          <NumberButton key={index} button={numbers} data={props.newData} />
+      ))}
     </div>
   );
 };

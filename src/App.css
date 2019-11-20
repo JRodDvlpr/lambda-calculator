@@ -54,7 +54,6 @@ img {
 
 .numbers_Container {
     width: 400px;
-    height: 400px;
     grid-area: row2 / col1 / row2 / col1;
 }
 
@@ -74,7 +73,6 @@ img {
 
 .operator_Container {
     width: 100px;
-    height: 550px;
     grid-area: row1 / col5 / row5 / col5;
 }
 
